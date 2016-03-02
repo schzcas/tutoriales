@@ -1,0 +1,501 @@
+  128  cd lectures
+  129  ls
+  130  cd collectiveintelligence_raja
+  131  ls
+  132  git add course_introduction.pdf
+  133  git add course_optimization.pdf
+  134  git add optimization.pdf
+  135  git commit course_introduction.pdf optimization.pdf -m "Carga de presentaciones"
+  136  git push master origin
+  137  git push origin master
+  138  echo "# americasymundo" >> README.md
+  139  git init
+  140  git add README.md
+  141  git commit -m "first commit"
+  142  git remote add origin git@github.com:schzcas/americasymundo.git
+  143  git push -u origin master
+  144  pwd
+  145  ls
+  146  cd ..
+  147  cd ..
+  148  cd ..
+  149  mkdir americasymundo
+  150  ls
+  151  cd americasymundo
+  152  ls
+  153  echo "# americasymundo" >> README.md
+  154  git init
+  155  git add README.md
+  156  git commit -m "first commit"
+  157  git remote add origin git@github.com:schzcas/americasymundo.git
+  158  git push -u origin master
+  159  ls
+  160  git add cuestionario_lideres_2014.docx cuestionario_poblacion2014.docx
+  161  git add cuestionario_lideres_2014.docx cuestionario_poblacion_2014.docx metodologia.pdf reporte_2014.pdf
+  162  git commit cuestionario_lideres_2014.docx cuestionario_poblacion_2014.docx metodologia.pdf reporte_2014.pdf -m "Carga de documentos"
+  163  git push origin master
+  164  pwd
+  165  ls
+  166  cd ..
+  167  pwd
+  168  ls
+  169  mkdir STEVENS-Data-Science-For-Public-Policy
+  170  ls
+  171  mv americasymundo CIDE-Americas-Mundo
+  172  ls
+  173  echo "# STEVENS-Data-Science-For-Public-Policy" >> README.md
+  174  git init
+  175  git add README.md
+  176  git commit -m "first commit"
+  177  git remote add origin git@github.com:schzcas/STEVENS-Data-Science-For-Public-Policy.git
+  178  git push -u origin master
+  179  ls
+  180  cat README.md
+  181  ls
+  182  cd CIDE-Americas-Mundo
+  183  ls
+  184  nano README.md
+  185  nano README.md
+  186  git add README.md
+  187  gir commit README.md -m "description"
+  188  git commit README.md -m "description"
+  189  git push origin masdter
+  190  git push origin master
+  191  nano README.md
+  192  cat README.md
+  193  git add README.md
+  194  git commit README.md -m "description"
+  195  git push origin master
+  196  pwd
+  197  cd ..
+  198  cd ..
+  199  cd ..
+  200  pwd
+  201  ls
+  202  cd Documents
+  203  ls
+  204  cd schzcas
+  205  ls
+  206  rm Adrian.txt
+  207  git push origin master
+  208  git rm Adrian.txt
+  209  git commit
+  210  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  211  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  212  ls
+  213  cd Documents
+  214  ls
+  215  schzcas
+  216  cd schzcas
+  217  ls
+  218  git rm Adrian.txt
+  219  git commit -m "Eliminacion Adrian.txt"
+  220  git push origin master
+  221  pwd
+  222  cd ..
+  223  cd git_repositories
+  224  ls
+  225  echo "# schzcas" >> README.md
+  226  git init
+  227  git add README.md
+  228  git commit -m "first commit"
+  229  git remote add origin git@github.com:schzcas/schzcas.git
+  230  git push -u origin master
+  231  pwd
+  232  ls
+  233  cat README.md
+  234  git rm README.md
+  235  git commit -m "Eliminacion README.md"
+  236  git push origin master
+  237  ls
+  238  mkdir schzcas
+  239  ls
+  240  cd schzcas
+  241  ls
+  242  echo "# schzcas" >> README.md
+  243  git init
+  244  git add README.md
+  245  git commit -m "first commit"
+  246  git remote add origin git@github.com:schzcas/schzcas.git
+  247  git push -u origin master
+  248  ls
+  249  nano README.md
+  250  git add README.md
+  251  git commit README.md -m "first commit README"
+  252  git log
+  253  git diff
+  254  git diff README.md
+  255  ls
+  256  git diff --cached README.md
+  257  git diff HEAD README.md
+  258  cat README.md
+  259  git push origin master
+  260  cd ..
+  261  git status
+  262  git ls-files
+  263  git ls
+  264  git status
+  265  git clean
+  266  docker
+  267  docker ps -a
+  268  docker start zsh
+  269  seq 5
+  270  seq 3 10
+  271  pwd
+  272  dj����
+  273  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  274  ls
+  275  cd Documents
+  276  ls
+  277  schzcas
+  278  cd schzcas
+  279  ls
+  280  git rm Adrian.txt
+  281  git commit -m "Eliminacion Adrian.txt"
+  282  git push origin master
+  283  pwd
+  284  cd ..
+  285  cd git_repositories
+  286  ls
+  287  echo "# schzcas" >> README.md
+  288  git init
+  289  git add README.md
+  290  git commit -m "first commit"
+  291  git remote add origin git@github.com:schzcas/schzcas.git
+  292  git push -u origin master
+  293  pwd
+  294  ls
+  295  cat README.md
+  296  git rm README.md
+  297  git commit -m "Eliminacion README.md"
+  298  git push origin master
+  299  ls
+  300  mkdir schzcas
+  301  ls
+  302  cd schzcas
+  303  ls
+  304  echo "# schzcas" >> README.md
+  305  git init
+  306  git add README.md
+  307  git commit -m "first commit"
+  308  git remote add origin git@github.com:schzcas/schzcas.git
+  309  git push -u origin master
+  310  ls
+  311  nano README.md
+  312  git add README.md
+  313  git commit README.md -m "first commit README"
+  314  git log
+  315  git diff
+  316  git diff README.md
+  317  ls
+  318  git diff --cached README.md
+  319  git diff HEAD README.md
+  320  cat README.md
+  321  git push origin master
+  322  cd ..
+  323  git status
+  324  git ls-files
+  325  git ls
+  326  git status
+  327  git clean
+  328  docker
+  329  docker ps -a
+  330  docker start zsh
+  331  seq 5
+  332  seq 3 10
+  333  pwd
+  334  dj����
+  335  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  336  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  337  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  338  seq 5
+  339  history
+  340  docker start zsh
+  341  seq 5
+  342  seq -s "|" 10
+  343  seq help
+  344  help seq
+  345  seq -help
+  346  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  347  seq 5
+  348  history
+  349  docker start zsh
+  350  seq 5
+  351  seq -s "|" 10
+  352  seq help
+  353  help seq
+  354  seq -help
+  355  python
+  356  for i in {1..100.3}; do  exit; for i in {1..100..3; 
+  357  for i in {1..100..3}; do echo "$i"; done
+  358  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  359  top
+  360  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  361  brew install htop
+  362  top
+  363  top
+  364  brew install parallel
+  365  aws help
+  366  docker ps -a
+  367  docker start zsh
+  368  aws help
+  369  exit
+  370  cd
+  371  pwd
+  372  ls
+  373  cd Desktop
+  374  echo "hello" > hello.txt
+  375  seq 100> hello2.txt
+  376  seq 100 > hello2.txt
+  377  seq 1000000 > 1000000.txt
+  378  cat 1000000.txt
+  379  cat 1000000.txt | parallel --pipe wc -l
+  380  cat 1000000.txt | wc -l
+  381  cat 1000000.txt | --pipe wc -l
+  382  docker start zsh
+  383  docker start zsh
+  384  pwd
+  385  cd Desktop
+  386  pwd
+  387  ls -lh
+  388  cat 1000000.txt
+  389  cat 1000000.txt | --pipi wc -l
+  390  cat 1000000.txt | --pipe wc -l
+  391  cat 1000000.txt | parallel --pipe wc -l
+  392  ions/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  393  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  394  pip install awscli
+  395  aws help
+  396  aws help
+  397  aws configure
+  398  aws configure
+  399  cd 
+  400  ls-la
+  401  ls -la
+  402  cd .ssh
+  403  ls -la
+  404  ls
+  405  find .pem
+  406  cat config
+  407  sudo find / | grep ".\.pem"
+  408  cd .ssh
+  409  pwd
+  410  ls -la
+  411  pwd
+  412  ls -la
+  413  for t in "Wake up" "The Matrix has you" "Follow the white rabbit" "Knock, knock";do pv -qL10 <<<$'\e[2J'$'\e[32m'$t$'\e[37m';sleep 5;done
+  414  brew instll pv
+  415  brew install pv
+  416  for t in "Wake up" "The Matrix has you" "Follow the white rabbit" "Knock, knock";do pv -qL10 <<<$'\e[2J'$'\e[32m'$t$'\e[37m';sleep 5;done
+  417  ls -la
+  418  cd .ssh
+  419  ls -la
+  420  find *.pem
+  421  find *schzcas.pem
+  422  for t in "Wake up" "The Matrix has you" "Follow the white rabbit" "Knock, knock";do pv -qL10 <<<$'\e[2J'$'\e[32m'$t$'\e[37m';sleep 5;done
+  423  for t in "Wake up" "The Matrix has you" "Follow the white rabbit" "Knock, knock";do pv -qL10 <<<$'\e[2J'$'\e[32m'$t$'\e[37m';sleep 5;done
+  424  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  425  hytop
+  426  htop
+  427  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  428  cd ~
+  429  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_profile
+  430  .bash_profile
+  431  cd .bash_profile
+  432  cd /.bash_profile
+  433  ~/.bash_profile
+  434  vim ~/.bash_profile
+  435  ~/.bash_profile
+  436  vim ~/.bash_profile
+  437  brew doctor
+  438  brew update
+  439  brew install cabextract
+  440  cd ~/Downloads
+  441  pwd
+  442  mkdir consolas
+  443  cd consolas
+  444  $ curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe
+  445  ls -la
+  446  ls
+  447  pwd
+  448  cd ..
+  449  cd ..
+  450  ls
+  451  ls -la
+  452  ~/.bash_profile
+  453  ~
+  454  cd
+  455  pwd
+  456  /.bash_profile
+  457  cd ~
+  458  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_profile
+  459  pwd
+  460  ls -a
+  461  cd .bash_profile
+  462  ls -a .bash_profile
+  463  ls
+  464  pwd
+  465  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_profile
+  466  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_prompt
+  467  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.aliases
+  468  ls
+  469  ls -la
+  470  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.aliases
+  471  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_prompt
+  472  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_profile
+  473  nano ~/.bash_profile
+  474  pwd
+  475  ls -la
+  476  cd .bash_profile
+  477  ls -a
+  478  ls -a .bash_profile
+  479  nano ~/.bash_prompt
+  480  cd ~
+  481  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_profile
+  482  nano ~/.bash_profile
+  483  nano ~/.bash_profile
+  484  pwd
+  485  ls
+  486   ls -la
+  487  curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.aliases
+  488  ls
+  489  ls -la
+  490  ll
+  491  ls -lh
+  492  cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+  493  git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"
+  494  cd ~
+  495  mkdir bin
+  496  ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+  497  seq 5
+  498  se 10
+  499  seq 10
+  500  exit
+  501  man tr
+  502  info tr
+  503  echo "Hola mi nombre es Jorge Adrián Sanche Castro alias SCHZCAS"
+  504  echo "Hola mi nombre es Jorge Adrián Sanche Castro alias SCHZCAS" | tr '[:upper:] '[:lower:]'
+  505  echo "Hola mi nombre es Jorge Adrián Sanche Castro alias SCHZCAS" | tr '[:upper:]' '[:lower:]'
+  506  echo "Hola mi nombre es Jorge Adrián Sanche Castro alias SCHZCAS" | tr -d ' '
+  507  man tr
+  508  echo "Hola mi nombre es Jorge Adrián Sanche Castro alias SCHZCAS" | tr -d ' ' '·'
+  509  echo "Hola mi nombre es Jorge Adrián Sanche Castro alias SCHZCAS" | tr -s ' ' '·'
+  510  echo 'MUUUUHHH BITCHHHH' | cowsay
+  511  cowsay
+  512  brew install cowsay
+  513  echo 'MUUUUHHH BITCHHHH' | cowsay
+  514  seq -s '|' 10
+  515  man seq
+  516  seq -w '|' 10
+  517  seq -w 1 150
+  518  seq 50 | grep 3
+  519  seq 50 | grep 3+2
+  520  grep "AMTRAK" accidentes.txt
+  521  cat accidentes.txt | wc
+  522  seq 50 | grep 3 > numeros.txt
+  523  cat numeros.txt
+  524  ls
+  525  ls >> prueba.dat
+  526  seq 50 | grep 5 >> numeros.txt
+  527  cat numeros.txt
+  528  < numeros.txt
+  529  < numeros.txt wc -l
+  530  < accidentes.txt wc -l
+  531  < accidentes.txt wc
+  532  sort < numeros.txt
+  533  man sort
+  534  sort -n < numeros.txt
+  535  ls 
+  536  ls -la
+  537  pwd
+  538  pwd
+  539  ls
+  540  man tee
+  541  pwd
+  542  numeros | tee listado.txt
+  543  numeros.txt | tee listado.txt
+  544  mv numeros.txt prueba.psv
+  545  cat prueba.psv
+  546  echo "Adolfo|1978|Físico" >> prueba.psv
+  547  cat prueba.psv
+  548  echo "AJorge19789FAmante >> prueba.psv
+cat prueba.psv
+  549  cat prueba.psv
+  550  echo "Jorge|1989|Amante" >> prueba.psv
+  551  cat prueba.psv
+  552  cut -d'|' -f1,3 prueba.psv
+  553  echo "Adolfo|1978|Físico" >>prueba.psv
+  554  echo "Jorge|1989|Amante" >> prueba.psv
+  555  cat prueba.psv
+  556  echo "Adolfo|1978|Físico" > prueba.psv
+  557  echo "Jorge|1989|Amante" >> prueba.psv
+  558  cat prueba.psv
+  559  cut -d'|' -f1,3 prueba.psv
+  560  cut -d'|' -f1 prueba.psv
+  561  cut -d'|' -f2 prueba.psv
+  562  cut -d'|' -f1,3 prueba.psv
+  563  cut -d'|' -f1-3 prueba.psv
+  564  accidentes.psv | td -d ',' '|' > accidentes.psv
+  565  accidentes.txt | tr -d ',' '|' > accidentes.psv
+  566  accidentes.txt | tr -d',' '|' > accidentes.psv
+  567* accidentes.txt | tr -d ',' '|'  
+  568  accidentes.txt | tr -d ',' '|' > accidentes.psv;2D
+  569  cat accidentes.txt | tr -d ',' '|' > accidentes.psv
+  570  accidentes.txt | tr -s ',' '|' > accidentes.psv
+  571  cat accidentes.txt | tr -s ',' '|' > accidentes.psv
+  572  cat accidentes.psv
+  573  accidentes.txt | tr -s ',' '|' > accidentes.psv
+  574  cat listado.txt
+  575  pwd
+  576  cat prueba.psv
+  577  cat listado.txt
+  578  rm prueba.psv
+  579  accidentes.txt | tr -s ',' '|' | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140> accidentes.psv
+  580  cat accidentes.psv
+  581  cat accidentes.txt
+  582  rm accidentes.psv
+  583  accidentes.txt | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140> accidentes.psv
+  584  cat acidentes.psv
+  585*  
+  586* ~~cat accidentes.psv~
+  587  accidentes.txt | tr -s ',' '|' | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140> accidentes.psv
+  588  echo accidentes.txt
+  589  man tr
+  590   tr -s ',' '|' <accidentes.txt | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140> accidentes.psv
+  591   tr -s ',' '|' < accidentes.txt | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140> accidentes.psv
+  592  cat accidentes.psv
+  593   tr -s ',' '|' < accidentes.txt | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140 > accidentes.psv
+  594  < accidentes.txt cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140 > accidentes.psv
+  595  < accidentes.txt cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140 > accidentes2.psv
+  596   tr -s ',' '|' < accidentes.txt | cut -d'|' -f16-28,30-35,37-39,45-52,75,76,79,80,85,115,117-118,139-140 > accidentes.psv
+  597  curl http://www.gutenberg.org/cache/epub/35/pg35.txt
+  598* curl https://en.wikipedia.org/wiki/Stevens_Institute_of_Technology > 
+  599  curl -s http://www.gutenberg.org/cache/epub/35/pg35.txt
+  600  man curl
+  601  info curl
+  602  curl http://www.gutenberg.org/cache/epub/35/pg35.txt > gutenber.txt
+  603  head accidentes.psv
+  604  head -3 gutenberg.txt
+  605  mv gutenber.txt gutenberg.txt
+  606  head gutenberg.txt
+  607  wc -l accidentes.psv
+  608  wc -l accidentes.txt
+  609  cat accidentes.txt accidentes.txt > accidentes2.txt
+  610  wc -l accidentes2.txt
+  611  wc -l accidentes*
+  612  split -l 1000  accidentes2.txt accidentes_
+  613  wc -l accidentes*
+  614  rm accidentes_aa accidentes_ab accidentes_ac
+  615  pwd
+  616  ls
+  617  wc -l
+  618  pwd
+  619  wc -l accidentes*
+  620  rm accidentes2.txt accidentes_ad accidentes_ae
+  621  wc -l accidentes*
+  622  sort -t '|' -k2 accidentes.psv
+  623  < accidentes.psv cut-d'|' -f1-6 | sort -t '|' -k2 -k1 | uniq -c |sort -g -r | head -5
+  624  < accidentes.psv cut -d'|' -f1-6 | sort -t '|' -k2 -k1 | uniq -c |sort -g -r | head -5
+  625   head -4 accidentes.psv
+  626  history
+  627  history > introduction_commands.txt
