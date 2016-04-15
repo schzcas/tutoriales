@@ -11,16 +11,16 @@
 5. Dar click en "Create new Access Key"
 
 Estas llaves son sumamente importantes.  Son los accesos a tu cuenta de AWS.
+Guardenlas en algun pinche lugar bien mamón, metenla en la carpeta de la carpeta de la carpeta,
+escribanla en un post-it y metanla en algun pinche libro que te regalaron que jamás vayas a leer.
+Y no la pinches vayan a subir al github!!!
 
-Guardenlas en sus corazoncitos, donde casi nadie puede llegar :).
-
-Las vamos a usar al configurar aws desde la terminal 
+Las vamos a usar al configurar aws desde la terminal:)
 
 ##Instalación de AWS Command Line Interface en tu computadora
 
 AWS Command Line Interface, alias "awscli"  es el programita que sirve como 
 interfaz entre tu computadora y los servicios de AWS. Nos permitirá conectarnos desde la terminal
-
 
 
 Abre tu terminal y teclea:
@@ -36,14 +36,44 @@ aws configure
 AWS Access Key ID [****************]: COPY-PESTEA tu llave
 AWS Secret Access Key [****************]: COPY-PESTEA tu llave
 Default region name [us-west-2]: us-east-1 
-## Amazon tiene varios Hosts alrededor del mundo. Escogemos us-east-1 por que es el 
-que provee más servicios, pero pueden escoger el que quieran.
-[Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
 Default output format [None]: ENTER
 ```
-LISTO Muchachos ... falta mas
 
+Amazon tiene varios hosts alrededor del mundo. Escogemos us-east-1 por que es el 
+que provee más servicios, pero pueden escoger el que quieran.Para más información de los servidores 
+[Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
+
+LISTO muchachachit@s ... falta más ->
+
+## Crear un Bocket en S3
+Vamos a crear un bocket en S3 que es una especie de carpeta en dónde se va a contener todo para nuestra arquitectura.
+
+S3 es el el servicio de cloud storage de nuestro muchacho el pelon-pellorico de Jeff Bezos.
+Si quieren nerdear, entrar al siguiente link, hay un videito bien cagado:
+[Amazon S3](https://aws.amazon.com/s3/)
+
+Entramos en la consola desde tu browser favorito... (Internet Explorer...not]) (Se puede hacer desde la terminal, pero eeeeehh).
+[AWS Management Console](https://aws.amazon.com/console/)
+
+1. Logearte en tu consola de AWS - [AWS Management Console](https://aws.amazon.com/console/)
+
+2. Dar click en el iconito S3 de color rojo abajo de donde dice "Storage & Content Delivery, primera columna"
+3. Dar click en "Create a Bucket"
+4. Pongan el nombre de su proyecto. Lo culero es que cada bucket es unico y solo pueden poner un nombre que nadie más haya usado en el mundo... de la verga no?
+
+... sharan!!!
+Ya tienen su bucket. 
+
+Ya estando aquí denle click a la carpeta y en "Actions" pueden subir sus bases de datos. -> como por ejemplo la de los ovnis que vimos en clase.
+
+Desde la terminal tiren:
+```
 aws s3 ls
+```
+AJAAA!!!
+Les va a dar error, porque todavía no hemos ligado nuestra compu a la "nube" del señor Bezos.
+
+
 ~/.ssh/config
 nano ~/.ssh/config
 chmod 400 schzcas.pem
