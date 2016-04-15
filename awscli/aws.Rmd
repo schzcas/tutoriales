@@ -38,10 +38,9 @@ AWS Secret Access Key [****************]: COPY-PESTEA tu llave
 Default region name [us-west-2]: us-east-1 
 Default output format [None]: ENTER
 ```
-***Nota** 
-Amazon tiene varios hosts alrededor del mundo. Escogemos us-east-1 por que es el 
-que provee más servicios, pero pueden escoger el que quieran.
-Para más información de los servidores ->
+> **Nota** 
+> Amazon tiene varios hosts alrededor del mundo. Escogemos us-east-1 por que es el que provee más servicios, pero pueden escoger el que quieran.
+> Para más información de los servidores ->
 [Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
 
 LISTO muchachachit@s ... falta más
