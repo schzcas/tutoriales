@@ -38,55 +38,105 @@ AWS Secret Access Key [****************]: COPY-PESTEA tu llave
 Default region name [us-west-2]: us-east-1 
 Default output format [None]: ENTER
 ```
-
+***Nota** 
 Amazon tiene varios hosts alrededor del mundo. Escogemos us-east-1 por que es el 
-que provee más servicios, pero pueden escoger el que quieran.Para más información de los servidores 
+que provee más servicios, pero pueden escoger el que quieran.
+Para más información de los servidores ->
 [Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
 
-LISTO muchachachit@s ... falta más ->
+LISTO muchachachit@s ... falta más
 
 ## Crear un Bocket en S3
 Vamos a crear un bocket en S3 que es una especie de carpeta en dónde se va a contener todo para nuestra arquitectura.
 
-S3 es el el servicio de cloud storage de nuestro muchacho el pelon-pellorico de Jeff Bezos.
+S3 es el el servicio de cloud storage de nuestro muchacho el pelon-pelorico de Jeff Bezos.
 Si quieren nerdear, entrar al siguiente link, hay un videito bien cagado:
 [Amazon S3](https://aws.amazon.com/s3/)
 
-Entramos en la consola desde tu browser favorito... (Internet Explorer...not]) (Se puede hacer desde la terminal, pero eeeeehh).
+Entramos en la consola desde tu browser favorito... (Internet Explorer...not]) 
+Se puede hacer desde la terminal, pero eeeeehh.
 [AWS Management Console](https://aws.amazon.com/console/)
 
 1. Logearte en tu consola de AWS - [AWS Management Console](https://aws.amazon.com/console/)
 
-2. Dar click en el iconito S3 de color rojo abajo de donde dice "Storage & Content Delivery, primera columna"
-3. Dar click en "Create a Bucket"
-4. Pongan el nombre de su proyecto. Lo culero es que cada bucket es unico y solo pueden poner un nombre que nadie más haya usado en el mundo... de la verga no?
+2. Dar click en el iconito S3 de color rojo abajo de donde dice "Storage & Content Delivery, primera columna" -> no mamen si no lo encuentran
+3. Dar click en "Create a Bucket".
+4. Pongan el nombre de su proyecto. 
+  Lo pinche es que cada bucket es unico y solo pueden poner un nombre que nadie más haya usado en el mundo... de la verga no?
 
 ... sharan!!!
 Ya tienen su bucket. 
 
-Ya estando aquí denle click a la carpeta y en "Actions" pueden subir sus bases de datos. -> como por ejemplo la de los ovnis que vimos en clase.
+**Nota**
+Ya estando aquí pueden darle click a la carpeta y en "Actions" pueden subir sus bases de datos. 
+-> como por ejemplo la de los ovnis que vimos en clase.
+
+
 
 Desde la terminal tiren:
 ```
 aws s3 ls
 ```
-AJAAA!!!
-Les va a dar error, porque todavía no hemos ligado nuestra compu a la "nube" del señor Bezos.
+Les debe de aparecer algo asi:
+
+```
+2016-04-13 13:58:19 clase-dpa
+```
+
+Si no les dio error es que ya chingaron... 
+Si no, es por que seguramente todavia no tienen configurado el SSH para conectarse desde su compu.
+Les va a dar error, porque todavía no hemos ligado nuestra compu a ninguna estancia en la "nube" del señor Bezos.
+
+## EC2
+La idea es ser capaz de conectarnos desde nuestra terminal a las instancias (maquinas) que abramos en EC2.
+***Nota***
+Si quieren nerdear por segunda vez, entrar al siguiente link, hay otro videito:
+[Amazon EC2](https://aws.amazon.com/ec2/)
+
+##Key Pair
+Vamos a crear una llave que encripta y desencripta tu loggin. 
 
 
-~/.ssh/config
+Desde la consola de AWS 
+1. Dar click al iconito de EC2 (este es naranja).
+2. En la columna izquierda, hay varias opciones. Localiza la que dice en gris "Network & Security"
+3. Dar click en "Key Pairs".
+4. Dar click en el ícono azul que dice "Create Key Pair"
+5. Pongale un nombre y se descargara un ".pem" en su compu.
+
+*** NOTA Con este certificado podrán logearse a sus instancias que tienen en cada server. 
+Si se mueven de server a otra región tienen que sacar otro de esa región.
+
+El archivo .pem hay que moverlo a la carpeta .ssh de su compu.
+
+Desde la carpeta donde hayan bajado su archivo .pem tiren 
+```
+mv file.pem  /Users/USUARIO/.ssh
+```
+
+verificamos que este aqui
+```
+cd ~ && cd .ssh && ls
+```
+
+Ahora hay que modificar el archivo config 
+```
 nano ~/.ssh/config
-chmod 400 schzcas.pem
-pwd
-ls -la
-cd Documents/ && ll
-cd aws
-ll
-mv schzcas.pem  /Users/schzcas/.ssh
-chmod 400 schzcas.pem
-cd ..
-cd ..
-pwd
+```
+Pongan el siguiente texto:
+```
+Host *.amazonaws.com
+  IdentityFile ~/.ssh/schzcas.pem
+  User ubuntu
+```
+***NOTA***
+Ponemos usuario ubuntu por que asumismos que nuestras instancias estarán levantadas en ubuntu.
+
+Para los usuarios de MAC o Linux tiren:
+```
+ chmod 400 ***my-key-pair***.pem
+ ```
+
 cd .ssh
 ls -la
 chmod 400 schzcas.pem
