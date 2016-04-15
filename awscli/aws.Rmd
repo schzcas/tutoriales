@@ -1,5 +1,8 @@
 # Amazon Web Services (AWS)
+Este tutorial es pa armar todo el desmadrillo con AWS.
+Todos los comandos estan armados para tirarlos desde MAC.
 
+saludos bandilla...
 
 ## Access Key ID y Secret Key 
 
@@ -93,6 +96,8 @@ La idea es ser capaz de conectarnos desde nuestra terminal a las instancias (maq
 > Si quieren nerdear por segunda vez, entrar al siguiente link, hay otro videito:
 > [Amazon EC2](https://aws.amazon.com/ec2/)
 
+
+
 ##Key Pair
 Vamos a crear una llave que encripta y desencripta tu loggin. 
 
@@ -158,5 +163,3 @@ Listones!!
 
 
 
-
-``` 
