@@ -105,8 +105,8 @@ Desde la consola de AWS:
 4. Dar click en el ícono azul que dice "Create Key Pair"
 5. Pongale un nombre y se descargara un ".pem" en su compu.
 
-*** NOTA Con este certificado podrán logearse a sus instancias que tienen en cada server. 
-Si se mueven de server a otra región tienen que sacar otro de esa región.
+> **NOTA** Con este certificado podrán logearse a sus instancias que tienen en cada server. 
+> Si se mueven de server a otra región tienen que sacar otro de esa región.
 
 6. Mover el archivo .pem a la carpeta .ssh de su compu.
 
