@@ -26,6 +26,7 @@ interfaz entre tu computadora y los servicios de AWS. Nos permitirá conectarnos
 Abre tu terminal y teclea:
 ```
 pip install awscli
+brew install jq
 ```
 Al terminar de instalarse vamos a configurar algunas cosas basicas. Te pedirá 
 Tus "Access Keys", tenlas a la mando en el archivo que se baja. 
@@ -40,8 +41,7 @@ Default output format [None]: ENTER
 ```
 > **Nota** 
 > Amazon tiene varios hosts alrededor del mundo. Escogemos us-east-1 por que es el que provee más servicios, pero pueden escoger el que quieran.
-> Para más información de los servidores ->
-[Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
+> Para más información de los servidores [Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
 
 LISTO muchachachit@s ... falta más
 
@@ -127,34 +127,19 @@ nano ~/.ssh/config
 Pongan el siguiente texto:
 ```
 Host *.amazonaws.com
-  IdentityFile ~/.ssh/schzcas.pem
+  IdentityFile ~/.ssh/**my-key-pair**.pem
   User ubuntu
 ```
-> **NOTA***
+> **NOTA**
 > Ponemos usuario ubuntu por que asumismos que nuestras instancias estarán levantadas en ubuntu.
 
-> **NOTA**Para los usuarios de MAC o Linux tiren:
+> **NOTA**
+> Para los usuarios de MAC o Linux tiren:
 > ```
 >  chmod 400 ***my-key-pair***.pem
 >  ```
 
-cd .ssh
-ls -la
-chmod 400 schzcas.pem
- history 20
-nano ~/.ssh/config
+Para finalizar, vamos a checar que no tengan ninguna computadora prendida (instancia), si no confien en dios en que este apagada y no les esten cobrando. 
+```
 aws ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
-awclis ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
-awscli ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
-pip install jq
-brew install jq
-awscli ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
-cd ..
-pwd
-aws ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
-history
-history 34
-cd Desktop/
-ll
-history 36 >aws.txt
- 
+``` 
