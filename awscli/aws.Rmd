@@ -1,0 +1,62 @@
+# Amazon Web Services (AWS)
+
+
+## Access Key ID y Secret Key 
+
+1. Logearte en tu consola de AWS
+- [AWS Management Console](https://aws.amazon.com/console/)
+
+2. Dar click a la parte superior derecha donde está tu nombre de cuenta.
+3. Dar click en "Security Credentials".
+4. Dar click en "Access Keys (Access Key ID and Secret Access Key)"
+5. Dar click en "Create new Access Key"
+
+Estas llaves son sumamente importantes.  Son los accesos a tu cuenta de AWS
+Guardenlas en sus corazoncitos, donde casi nadie puede llegar :).
+
+Las vamos a usar al configurar aws. 
+
+##Instalación de AWS Command Line Interface en tu computadora
+
+Es la interfaz que nos ayudará a conectarnos desde la terminal con AWS
+
+Abre tu terminal y teclea:
+```
+pip install awscli
+```
+
+aws configure
+aws s3 ls
+~/.ssh/config
+nano ~/.ssh/config
+chmod 400 schzcas.pem
+pwd
+ls -la
+cd Documents/ && ll
+cd aws
+ll
+mv schzcas.pem  /Users/schzcas/.ssh
+chmod 400 schzcas.pem
+cd ..
+cd ..
+pwd
+cd .ssh
+ls -la
+chmod 400 schzcas.pem
+ history 20
+nano ~/.ssh/config
+aws ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
+awclis ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
+awscli ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
+pip install jq
+brew install jq
+awscli ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
+cd ..
+pwd
+aws ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
+history
+history 34
+cd Desktop/
+ll
+history 36 >aws.txt
+ 
