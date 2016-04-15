@@ -3,29 +3,46 @@
 
 ## Access Key ID y Secret Key 
 
-1. Logearte en tu consola de AWS
-- [AWS Management Console](https://aws.amazon.com/console/)
+1. Logearte en tu consola de AWS - [AWS Management Console](https://aws.amazon.com/console/)
 
 2. Dar click a la parte superior derecha donde está tu nombre de cuenta.
 3. Dar click en "Security Credentials".
 4. Dar click en "Access Keys (Access Key ID and Secret Access Key)"
 5. Dar click en "Create new Access Key"
 
-Estas llaves son sumamente importantes.  Son los accesos a tu cuenta de AWS
+Estas llaves son sumamente importantes.  Son los accesos a tu cuenta de AWS.
+
 Guardenlas en sus corazoncitos, donde casi nadie puede llegar :).
 
-Las vamos a usar al configurar aws. 
+Las vamos a usar al configurar aws desde la terminal 
 
 ##Instalación de AWS Command Line Interface en tu computadora
 
-Es la interfaz que nos ayudará a conectarnos desde la terminal con AWS
+AWS Command Line Interface, alias "awscli"  es el programita que sirve como 
+interfaz entre tu computadora y los servicios de AWS. Nos permitirá conectarnos desde la terminal
+
+
 
 Abre tu terminal y teclea:
 ```
 pip install awscli
 ```
+Al terminar de instalarse vamos a configurar algunas cosas basicas. Te pedirá 
+Tus "Access Keys", tenlas a la mando en el archivo que se baja. 
 
+```
 aws configure
+
+AWS Access Key ID [****************]: COPY-PESTEA tu llave
+AWS Secret Access Key [****************]: COPY-PESTEA tu llave
+Default region name [us-west-2]: us-east-1 
+## Amazon tiene varios Hosts alrededor del mundo. Escogemos us-east-1 por que es el 
+que provee más servicios, pero pueden escoger el que quieran.
+[Regions and Availability Zones](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones)
+Default output format [None]: ENTER
+```
+LISTO Muchachos ... falta mas
+
 aws s3 ls
 ~/.ssh/config
 nano ~/.ssh/config
