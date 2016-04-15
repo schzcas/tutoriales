@@ -133,6 +133,7 @@ Host *.amazonaws.com
 > **NOTA**
 > Ponemos usuario ubuntu por que asumismos que nuestras instancias estarán levantadas en ubuntu.
 
+
 > **NOTA**
 > Para los usuarios de MAC o Linux tiren:
 > ```
@@ -142,4 +143,17 @@ Host *.amazonaws.com
 Para finalizar, vamos a checar que no tengan ninguna computadora prendida (instancia), si no confien en dios en que este apagada y no les esten cobrando. 
 ```
 aws ec2 describe-instances | jq '.Reservations[].Instances[] |  {PublicDnsName, InstanceId, PublicIpAddress}'
+
+Les tendra que aparecer algo así si tienen una instancia apagada:
+```
+{
+  "PublicDnsName": "",
+  "InstanceId": "i-ad53dc6a",
+  "PublicIpAddress": null
+}
+```
+
+
+
+
 ``` 
